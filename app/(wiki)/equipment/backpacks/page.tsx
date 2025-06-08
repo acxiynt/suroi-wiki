@@ -60,7 +60,7 @@ export default function BackpackPage() {
           title="Backpack Ammunition Capacity Statistics"
           header={[
             "Backpack",
-            ...["12g", "556mm", "762mm", "9mm", "50cal", "338lap", "curadell", "firework_rocket"].map(
+            ...["12g", "556mm", "762mm", "9mm", "50cal", "338lap", "firework_rocket"].map(
               ammo => (
                 <Image
                   src={getSuroiImageLink(getSuroiItem(ammo))}
@@ -94,7 +94,6 @@ export default function BackpackPage() {
             backpack.maxCapacity["9mm"].toString(),
             backpack.maxCapacity["50cal"].toString(),
             backpack.maxCapacity["338lap"].toString(),
-            backpack.maxCapacity.curadell.toString(),
             backpack.maxCapacity.firework_rocket.toString()
           ])}
         />

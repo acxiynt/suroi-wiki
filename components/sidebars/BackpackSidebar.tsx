@@ -107,7 +107,7 @@ export default function BackpackSidebar({
         ))}
       </InfoboxRow>
       <InfoboxRow>
-        {["curadell", "firework_rocket"].map(ammo => (
+        {["firework_rocket"].map(ammo => (
           <InfoboxColumn
             key={ammo}
             title={(
